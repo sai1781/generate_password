@@ -5,7 +5,6 @@ import { Stack } from '@mui/system';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaste } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from "react";
-import { specialCharacters, lowerCaseLetters, upperCaseLetters, numbers1 } from './Character'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -14,6 +13,12 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
 function App() {
+  const numbers1 = "0123456789"
+const upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+ const lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
+ const specialCharacters = "!'^+%&/()-?_#$%{[]}|;:>+`<.*-@";
+
+  
   const [password1, setPassword1] = useState("");
   const [passwordlength, setPasswordLength] = useState(15);
   const [uppercase, setUpperCase] = useState(false);
