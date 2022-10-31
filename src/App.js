@@ -69,7 +69,7 @@ function App() {
   const generatePassword = _ => {
     var characterList = '';
     if(!numbers && !symbols && !lowercase && !uppercase){
-      copiedFailed("copied failed you need to select minimum 1option")
+      copiedFailed("!generating password failed! you need to select minimum 1option")
     }
 
     if (numbers) {
